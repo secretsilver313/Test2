@@ -6,6 +6,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\command\CommandExecutor;
+use pocketmine\item\Item;
 use pocketmine\Player;
 
 class Main extends PluginBase{
@@ -20,9 +21,11 @@ class Main extends PluginBase{
               if($player->hasPermission("id.use"); {
                 $getid = $player->getInventory()->getItemInHand()->getId();
                 $player->sendMessage(" The ID of this item is $getid  ");
-              }
                  }else{
                    $sender->sendMessage("§4You Dont have permission to use this command");
                  }
-                 }
+              }
+           return true;
+           }
+}
                  
