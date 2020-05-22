@@ -4,3 +4,8 @@ api: [3.0.0, 3.9.7, 4.0.0]
 author: secretsilver313
 version: 1.0.0
 description: "Finds the id of the item in your hand!"
+commands:
+  id:
+    default: op
+    permission: id.use
+    description: Finds the ID of the item in your hand!
