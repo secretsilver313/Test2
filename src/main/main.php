@@ -17,10 +17,10 @@ class Main extends PluginBase{
 
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args): bool
     {
-            if($cmd->getName() == "id") {
-              if($player->hasPermission("id.use"); {
+            if($cmd->getName() == "id"){
+              if($player->hasPermission("id.use"){
                 $getid = $player->getInventory()->getItemInHand()->getId();
-                $player->sendMessage(" The ID of this item is $getid  ");
+                $player->sendMessage("The ID of this item is $getid");
                  }else{
                    $sender->sendMessage("§4You Dont have permission to use this command");
                  }
