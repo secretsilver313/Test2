@@ -1,5 +1,5 @@
 name: IdFinder
-main: main/main.php
+main: main/main
 api: [3.0.0, 3.9.7, 4.0.0]
 author: secretsilver313
 version: 1.0.0
